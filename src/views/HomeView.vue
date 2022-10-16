@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Music from '../components/Music.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+    <div>
+      <Music />
+    </div>
 </template>
