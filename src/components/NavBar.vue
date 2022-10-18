@@ -6,20 +6,19 @@ import { RouterLink } from 'vue-router'
 <nav class="container-navbar">
 <ul class="nav flex-column">
     <a class="navbar-brand" href="#">
-    <img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
-    Clef
+    <img src="https://cdn.dribbble.com/users/1541680/screenshots/4870925/media/1d1b2cad045110b6301228432918ab66.png?compress=1&resize=400x300" width="100" height="100" class="d-inline-block align-top" alt="">
   </a>
     <li class="nav-item">
-      <RouterLink to="/" class="nav-link">Home</RouterLink>
+      <RouterLink to="/">Home</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink to="/explore" class="nav-link">Explore</RouterLink>
+      <RouterLink to="/explore">Explore</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink to="/mymusic" class="nav-link">My Music</RouterLink>
+      <RouterLink to="/mymusic">My Music</RouterLink>
     </li>
     <li class="nav-item">
-      <RouterLink to="/calendar" class="nav-link">Calendar</RouterLink>
+      <RouterLink to="/calendar">Calendar</RouterLink>
     </li>
   </ul>
 </nav>
