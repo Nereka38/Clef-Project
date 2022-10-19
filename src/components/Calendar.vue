@@ -1,8 +1,8 @@
 <template>
     <nav class="container-navbar">
     <ul class="nav flex-column">
-        <h2>Calendar</h2>
         <div class="container">
+            <h2>Choose Day</h2>
 	<div class="row">
 		<div class="span12">
     	    <table class="table-condensed table-bordered table-striped">

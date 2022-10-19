@@ -40,4 +40,17 @@ width: 200px;
 .container-navbar {
   display:flex;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(189, 77, 189);
+}
+
+.nav-item {
+  margin: 1vw;
+}
 </style>

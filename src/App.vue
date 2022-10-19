@@ -1,12 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue';
-im
+
 </script>
 
 <template>
-  <NavBar/>
-    <div>
+    <NavBar/>
+  <div class="views">
       <RouterView />
     </div>
 </template>
@@ -15,5 +15,12 @@ im
 #app {
   display: flex;
   margin: auto;
+}
+
+.views {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
 }
 </style>
