@@ -1,6 +1,6 @@
 <script setup>
-import Info from './components/Info.vue';
-import TracklistInfo from '../components/TracklistInfo.vue';
+import Info from '@/components/Info.vue';
+import TracklistInfo from '@/components/TracklistInfo.vue';
 
 </script>
 <template>

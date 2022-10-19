@@ -1,18 +1,19 @@
 <script setup>
-import NavBar from './components/NavBar.vue';
-import Music from './components/Music.vue';
+import { RouterView } from 'vue-router'
+import NavBar from '@/components/NavBar.vue';
+im
 </script>
 
 <template>
   <NavBar/>
     <div>
-      <Music />
+      <RouterView />
     </div>
 </template>
 
 <style>
 #app {
   display: flex;
-  justify-content: space-between;
+  margin: auto;
 }
 </style>

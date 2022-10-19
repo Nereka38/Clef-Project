@@ -1,7 +1,7 @@
 <template>
     <nav class="container-navbar">
     <ul class="nav flex-column">
-        <h2>Clef</h2>
+        <h2>Tracklist</h2>
             <li class="nav-item">
                 1.
             </li>

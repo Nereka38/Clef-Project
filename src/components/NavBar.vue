@@ -39,7 +39,5 @@ width: 200px;
 
 .container-navbar {
   display:flex;
-  justify-content:left;
-  margin: 0 5vw 0 0;
 }
 </style>
