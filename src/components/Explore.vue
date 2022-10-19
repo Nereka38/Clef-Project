@@ -22,6 +22,7 @@ export default {
 </script>
 
 <template>
+    <h2>R&B</h2>
         <div class="container-card">
             <div class="all-card">
             <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
@@ -46,6 +47,41 @@ export default {
                         <p class="card-text">Título - Artista</p>
                     </div>
             </div>
+            </div>
+            <div class="all-card">
+            <div class="card" style="width: 14rem;">
+                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Título - Artista</p>
+                    </div>
+            </div>
+            </div>
+            <div class="all-card">
+            <div class="card" style="width: 14rem;">
+                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Título - Artista</p>
+                    </div>
+            </div>
+            </div>
+            </div>
+            <h2>Pop</h2>
+        <div class="container-card">
+            <div class="all-card">
+            <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
+                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{{music.album}} - {{music.artist}}</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="all-card">
+            <div class="card" style="width: 14rem;">
+                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Título - Artista</p>
+                    </div>
             </div>
             <div class="all-card">
             <div class="card" style="width: 14rem;">
