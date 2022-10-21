@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Explore from '../views/Explore.vue'
 import MyMusic from '../views/MyMusic.vue'
 import Calendar from '../views/Calendar.vue'
+import Info from '../views/Info.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/calendar',
       name: 'calendar',
       component: Calendar
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: Info
     },
   ]
 })

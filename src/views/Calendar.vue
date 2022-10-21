@@ -9,10 +9,10 @@ import CalendarDate from '../components/CalendarDate.vue'
         <div>
             <CalendarDate />
         </div>
+        </div>
         <div>
             <Calendar />
         </div>
-    </div>
 </template>
 
 <style scoped>
@@ -22,5 +22,6 @@ import CalendarDate from '../components/CalendarDate.vue'
 .container-calendar {
     display: flex;
     justify-content: center;
+    flex-flow:column;
 }
 </style>

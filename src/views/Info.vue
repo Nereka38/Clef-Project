@@ -4,9 +4,11 @@ import TracklistInfo from '@/components/TracklistInfo.vue';
 
 </script>
 <template>
-    <h1>INFO</h1>
-    <div>
-        <Info />
+    <div class="container-info">
+        <h1>INFO</h1>
+            <div>
+                <Info />
+            </div>
     </div>
     <div>
         <TracklistInfo />

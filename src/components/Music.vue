@@ -26,10 +26,11 @@ export default {
         <div class="container-card">
             <div class="all-card">
             <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <img :src="music.imagealbum" class="card-img-top" alt="...">
+                <RouterLink to="/info"><img :src="music.imagealbum" class="card-img-top" alt="..."></RouterLink>
                     <div class="card-body">
                         <p class="card-text">{{music.album}} - {{music.artist}}</p>
                     </div>
+                    <button @click="addMusic()">Guardar en mi música</button>
             </div>
             </div>
         </div>

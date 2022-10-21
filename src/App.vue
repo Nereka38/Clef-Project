@@ -15,6 +15,7 @@ import NavBar from '@/components/NavBar.vue';
 #app {
   display: flex;
   margin: auto;
+  justify-content: space-between;
 }
 
 .views {

@@ -26,7 +26,7 @@ export default {
         <div class="container-card">
             <div class="all-card">
             <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                <img :src="music.imagealbum" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">{{music.album}} - {{music.artist}}</p>
                     </div>
@@ -69,7 +69,7 @@ export default {
         <div class="container-card">
             <div class="all-card">
             <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                <img :src="music.imagealbum" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">{{music.album}} - {{music.artist}}</p>
                     </div>

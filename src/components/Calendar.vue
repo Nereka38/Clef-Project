@@ -79,12 +79,12 @@
     </nav>
 </template>
     
-    <style scoped lang="css">
+    <style scoped>
     .nav {
     background-color:blueviolet;
     display:flex;
     justify-content: left;
-    width: 200px;
+    
     }
     
     .nav-link {
@@ -93,7 +93,7 @@
     
     .container-navbar {
       display:flex;
-      justify-content:left;
-      margin: 0 5vw 0 0;
+      justify-content:right;
+      width: 100%;
     }
     </style>

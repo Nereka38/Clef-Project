@@ -23,43 +23,29 @@ export default {
 
 <template>
         <div class="container-card">
+            <h2>Agosto 2022</h2>
             <div class="all-card">
             <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                <img :src="music.imagealbum" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">{{music.album}} - {{music.artist}}</p>
                     </div>
             </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
-                    </div>
             </div>
+            <h2>Septiembre 2022</h2>
             <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+            <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
+                <img :src="music.imagealbum" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">{{music.album}} - {{music.artist}}</p>
                     </div>
             </div>
             </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
-                    </div>
-            </div>
-            </div>
-        </div>
-    </div>
         </div>
 </template>
 
 <style scoped>
-.h1, h1 {
+.h1, h1, h2 {
     text-align: center;
 }
 .card-img-top {
@@ -71,7 +57,7 @@ export default {
     display: flex;
     justify-content: center;
     width: 10vw;
-    margin: 5vw;
+    margin: 2vw;
 }
 
 .card-body {
@@ -87,6 +73,7 @@ export default {
 .all-card {
     display: flex;
     justify-content: center;
+    padding: 3vw;
 
 }
 </style>
