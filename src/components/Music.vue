@@ -13,11 +13,17 @@ export default {
             MusicService.getMusics().then((response) => {
             this.musics = response.data;   
             });
-        }
+        },
+        showMusic(music){
+            this.$router.push({
+                name: "info",
+                params: { id: music.id },
+            });
+        },
     },
     created() {
         this.getMusics();
-    }
+    },
 }
 </script>
 
@@ -26,11 +32,11 @@ export default {
         <div class="container-card">
             <div class="all-card">
             <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <RouterLink to="/info"><img :src="music.imagealbum" class="card-img-top" alt="..."></RouterLink>
+                <img :src="music.imagealbum" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">{{music.album}} - {{music.artist}}</p>
                     </div>
-                    <button @click="addMusic()">Guardar en mi música</button>
+                <button @click="showMusic(music)">About</button>
             </div>
             </div>
         </div>

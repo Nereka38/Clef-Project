@@ -6,5 +6,7 @@ class MusicService {
     getMusics() {
         return axios.get(MUSIC_API_BASE_URL)
     }
+
 }
+
 export default new MusicService();
