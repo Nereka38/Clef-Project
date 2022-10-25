@@ -1,114 +1,98 @@
 <script>
-import MusicService from '../services/MusicService';
 
-export default {
-    name: 'Musics',
-    data(){
-        return {
-            musics: []
-        }
-    },
-    methods: {
-        getMusics(){
-            MusicService.getMusics().then((response) => {
-            this.musics = response.data;   
-            });
-        }
-    },
-    created() {
-        this.getMusics();
-    }
-}
 </script>
 
 <template>
-    <h2>R&B</h2>
-        <div class="container-card">
-            <div class="all-card">
-            <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <img :src="music.imagealbum" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">{{music.album}} - {{music.artist}}</p>
-                    </div>
-            </div>
-            </div>
-        </div>
+<h2>Pop</h2>
+    <div class="container-card">
         <div class="all-card">
             <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                <figure class="effect-zoe">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0294e71ca5acea8203c4aa120c" class="card-img-top" alt="...">
+                    <figcaption>    
+                        <div class="card-body">
+                            <p class="card-text">Midnights - Taylor Swift</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        <div class="card" style="width: 14rem;">
+        <figure class="effect-zoe">
+            <img src="https://i.scdn.co/image/ab67706c0000bebb0be442b4d4e307f7a52242e0" class="card-img-top" alt="...">
+                <figcaption>    
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">Un Verano Sin Ti - Bad Bunny</p>
                     </div>
-            </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                </figcaption>
+        </figure>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <figure class="effect-zoe">
+            <img src="https://cdn2.albumoftheyear.org/200x/album/490537-the-hardest-part-1.jpg" class="card-img-top" alt="...">
+                <figcaption>    
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">The Hardest Part - Noah Cyrus</p>
                     </div>
-            </div>
-            </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                </figcaption>
+        </figure>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <figure class="effect-zoe">
+            <img src="https://cdn2.albumoftheyear.org/200x/album/504375-hold-the-girl-2.jpg" class="card-img-top" alt="...">
+                <figcaption>    
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">Hold The Girl - Rina Sawayama</p>
                     </div>
-            </div>
-            </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
-                    </div>
-            </div>
-            </div>
-            </div>
-            <h2>Pop</h2>
-        <div class="container-card">
-            <div class="all-card">
-            <div v-for="music in musics" v-bind:key="music.id" class="card" style="width: 14rem;">
-                <img :src="music.imagealbum" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">{{music.album}} - {{music.artist}}</p>
-                    </div>
-            </div>
-            </div>
-        </div>
+                </figcaption>
+        </figure>
+    </div>
+</div>
+<h2>R&B</h2>
+<div class="container-card">
         <div class="all-card">
             <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                <figure class="effect-zoe">
+                    <img src="https://cdn2.albumoftheyear.org/200x/album/414616-blue-water-road.jpg" class="card-img-top" alt="...">
+                    <figcaption>    
+                        <div class="card-body">
+                            <p class="card-text">Blue Water Road - Kehlani</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        <div class="card" style="width: 14rem;">
+        <figure class="effect-zoe">
+            <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                <figcaption>    
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">RENAISSANCE - Beyoncé</p>
                     </div>
-            </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                </figcaption>
+        </figure>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <figure class="effect-zoe">
+            <img src="https://cdn2.albumoftheyear.org/200x/album/485009-special.jpg" class="card-img-top" alt="...">
+                <figcaption>    
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">Special - Lizzo</p>
                     </div>
-            </div>
-            </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
+                </figcaption>
+        </figure>
+    </div>
+    <div class="card" style="width: 14rem;">
+        <figure class="effect-zoe">
+            <img src="https://cdn2.albumoftheyear.org/200x/album/506065-give-or-take.jpg" class="card-img-top" alt="...">
+                <figcaption>    
                     <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
+                        <p class="card-text">Give or Take - Giveon</p>
                     </div>
-            </div>
-            </div>
-            <div class="all-card">
-            <div class="card" style="width: 14rem;">
-                <img src="https://m.media-amazon.com/images/I/61yO73-xTcL._SL1500_.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Título - Artista</p>
-                    </div>
-            </div>
-            </div>
-            </div>
-    <!-- </div> -->
+                </figcaption>
+        </figure>
+    </div>
+</div>
+</div>
+</div>
 </template>
 
 <style>

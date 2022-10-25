@@ -19,9 +19,7 @@ import CalendarDate from '../components/CalendarDate.vue'
 .h1 {
     text-align: center;
 }
-.container-calendar {
-    display: flex;
-    justify-content: center;
-    flex-flow:column;
-}
+
+
+
 </style>

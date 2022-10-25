@@ -3,52 +3,40 @@
     <ul class="nav flex-column">
         <h2>Tracklist</h2>
             <li class="nav-item">
-                1.I’M THAT GIRL
+                1.COMPLETE MESS
             </li>
             <li class="nav-item">
-                2.COZY
+                2.Easy For You To Say
             </li>
             <li class="nav-item">
-                3.ALIEN SUPERSTAR
+                3.Bad Omens
             </li>
             <li class="nav-item">
-                4.CUFF IT
+                4.Me Myself & I
             </li>
             <li class="nav-item">
-                5.ENERGY
+                5.Take My Hand
             </li>
             <li class="nav-item">
-                6.BREAK MY SOUL
+                6.CAROUSEL
             </li>
             <li class="nav-item">
-                7.CHURCH GIRL
+                7.Older (Ft. Sierra Deaton)
             </li>
             <li class="nav-item">
-                8.PLASTIC OFF THE SOFA
+                8.HAZE
             </li>
             <li class="nav-item">
-                9.VIRGO’S GROOVE
+                9.You Don’t Go To Parties
             </li>
             <li class="nav-item">
-                10.MOVE
+                10.BLENDER
             </li>
             <li class="nav-item">
-                11.HEATED
+                11.Caramel
             </li>
             <li class="nav-item">
-                12.THIQUE
-            </li>
-            <li class="nav-item">
-                13.ALL UP IN YOUR MIND
-            </li>
-            <li class="nav-item">
-                14.AMERICA HAS A PROBLEM
-            </li>
-            <li class="nav-item">
-                15.PURE/HONEY
-            </li>
-            <li class="nav-item">
-                16.SUMMER RENAISSANCE
+                12.Best Friends
             </li>
     </ul>
     </nav>
@@ -59,7 +47,9 @@
     background-color:blueviolet;
     display:flex;
     justify-content: left;
-    
+    align-items: center;
+    width: 200%;
+    padding: 1vw;
     }
     
     .nav-link {
@@ -70,7 +60,9 @@
       display:flex;
       justify-content:right;
       width: 100%;
-      margin: 0 0 0 2.6vw;
     }
 
+    li {
+        color: white;
+    }
 </style>

@@ -1,10 +1,17 @@
-import axios from 'axios';
-const MUSIC_API_BASE_URL = 'http://localhost:8080/api/musics';
+import http from './http-common';
 
 class MusicService {
 
     getMusics() {
-        return axios.get(MUSIC_API_BASE_URL)
+        return http.get();
+    }
+
+    getById(id) {
+        return http.get(`/${id}`);
+    }
+
+    deleteMusic(id) {
+        return http.delete(`/delete/{id}`);
     }
 
 }

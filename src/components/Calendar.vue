@@ -10,7 +10,7 @@
                     <tr>
                       <th colspan="7" >
                         <a class="btn"><i class="icon-chevron-left"></i></a>
-                        <a class="btn">February 2012</a>
+                        <a class="btn">Octubre 2022</a>
                         <a class="btn"><i class="icon-chevron-right"></i></a>
                       </th>
                     </tr>
@@ -84,7 +84,9 @@
     background-color:blueviolet;
     display:flex;
     justify-content: left;
-    
+    align-items: center;
+    width: 200%;
+    padding: 1vw;
     }
     
     .nav-link {

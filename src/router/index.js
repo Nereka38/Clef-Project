@@ -29,9 +29,8 @@ const router = createRouter({
       component: Calendar
     },
     {
-      path: '/info/:id',
+      path: '/info',
       name: 'info',
-      props: true,
       component: Info
     },
   ]

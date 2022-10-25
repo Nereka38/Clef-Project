@@ -30,6 +30,7 @@ import { RouterLink } from 'vue-router'
 background-color:blueviolet;
 display:flex;
 justify-content: left;
+align-items: center;
 width: 200px;
 }
 
@@ -44,13 +45,19 @@ width: 200px;
 a {
   color: white;
   text-decoration: none;
+  margin: 1vw;
 }
 
 a:hover {
-  color: rgb(189, 77, 189);
+  color: rgb(255, 255, 255);
+}
+
+.nav-item:hover {
+background: rgba(173, 102, 240, 0.349);
+opacity: 0.8;
 }
 
 .nav-item {
-  margin: 1vw;
+  padding: 1vw;
 }
 </style>
